@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзыв</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/feedback.css">
+    <link rel="stylesheet" href="css/editor.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Play:wght@400;700&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="js/editor/editorInputs.js" defer></script>
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Музыкальный секвенсор</h1>
+        <nav>
+            <a href="index.html">На главную</a>
+            <a href="drums.html">Барабаны</a>
+            <a href="notes.html">Мелодии</a>
+            <a href="piano.html">Пианино</a>
+        </nav>
+        <button class="burger-btn">
+        <svg class="open" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        <svg class="close" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>     
+        </button>
+    </header>
+    <main>
+        <h2>Отзыв</h2>
+        <form action="" onsubmit="alert('Спасибо за отзыв!')">
+            <label>
+                <span>Ваша оценка</span>
+                <label>
+                    <input type="radio" name="rating" value="1">
+                    <span>1</span>
+                </label>
+                
+                <label>
+                    <input type="radio" name="rating" value="2">
+                    <span>2</span>
+                </label>
+                
+                <label>
+                    <input type="radio" name="rating" value="3" checked>
+                    <span>3</span>
+                </label>
+                
+                <label>
+                    <input type="radio" name="rating" value="4">
+                    <span>4</span>
+                </label>
+                
+                <label>
+                    <input type="radio" name="rating" value="5">
+                    <span>5</span>
+                </label>
+            </label>
+            <label>
+                <span>Ваш отзыв</span>
+                <textarea name="feedback"></textarea>
+            </label>
+            <button type="submit">Отправить</button>
+        </form>
+    </main>
+    <footer>
+        <small>Студент МИРЭА 2025. Все права защищены.</small>
+    </footer>
+</body>
+</html>

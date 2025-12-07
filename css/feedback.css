@@ -1,0 +1,30 @@
+form {
+    display: flex;
+    padding: 0.5em;
+    border-radius: 10px;
+    flex-direction: column;
+    background: var(--bg-blur);
+    backdrop-filter: blur(10px);
+    box-shadow: 5px 5px 5px var(--shadow-col);
+}
+
+form>label {
+    display: flex;
+    flex-direction: column;
+}
+
+form textarea {
+    margin: 0.5em 0.5em;
+    padding: 0.5em;
+    border-radius: 10px;
+    background: var(--bg-light);
+    scrollbar-color: var(--bg-light) var(--bg-dark);
+    width: 400px;
+    height: 150px;
+    max-width: 80vw;
+    resize: none;
+}
+
+form button {
+    align-self: center;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Виртуальное пианино</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pattern.css">
+    <link rel="stylesheet" href="css/editor.css">
+    <link rel="stylesheet" href="css/piano.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Play:wght@400;700&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="js/fibonacci/synth.js" defer></script>
+    <script src="js/fibonacci/presets.js" defer></script>
+    <script src="js/editor/editorInputs.js" defer></script>
+    <script src="js/piano.js" defer></script>
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Музыкальный секвенсор</h1>
+        <nav>
+            <a href="index.html">На главную</a>
+            <a href="drums.html">Барабаны</a>
+            <a href="notes.html">Мелодии</a>
+            <a href="feedback.html">Отзыв</a>
+        </nav>
+        <button class="burger-btn">
+        <svg class="open" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        <svg class="close" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>     
+        </button>
+    </header>
+    <main>
+        <h2>Виртуальное пианино</h2>
+        <div id="piano"></div>
+        <div id="synths"></div>
+        
+        <p class="description">
+            Онлайн пианино — это виртуальный музыкальный инструмент, который работает прямо в браузере и не требует установки дополнительного программного обеспечения. Клавиатура отображена на экране в привычном фортепианном расположении: белые и чёрные клавиши соответствуют реальным нотам.
+            <br>Белые клавиши управляются верхним рядом букв клавиатуры, а черные - цифровыми клавишами, сохраняя относительное расположение клавиш. 
+            <br>Для достижения различного звучания предусмотрен выбор из 5 синтезаторов.
+        <div id="alert">
+            <svg class="rotate" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="m550-30-56-57 73-73H320q-33 0-56.5-23.5T240-240v-407l80 80v327h247l-73-73 56-57 170 170L550-30Zm170-283-80-80v-327H393l73 73-56 57-170-170 170-170 56 57-73 73h247q33 0 56.5 23.5T720-720v407Z"/></svg>
+            <svg class="close" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>     
+            <p>Для более качественного опыта рекомендуется использовать горизонтальную ориентацию</p>
+        </div>
+    </main>
+    <footer>
+        <small>Студент МИРЭА 2025. Все права защищены.</small>
+    </footer>
+</body>
+</html>

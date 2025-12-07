@@ -1,0 +1,48 @@
+:root {
+    --key-size: 45px;
+}
+
+@media (max-width: 770px) {
+    :root {
+        --key-size: 35px;
+    }
+}
+
+@media (max-width: 580px) {
+    :root {
+        --key-size: 25px;
+    }
+}
+
+
+#piano {
+    justify-self: center;
+    display: flex;
+    gap: 5px;
+    margin: 1em 0;
+    overflow-x: auto;
+    width: fit-content;
+    max-width: 90vw;
+    user-select: none;
+}
+
+.key {
+    width: var(--key-size);
+    height: calc(var(--key-size) * 3);
+    border-radius: 0 0 5px 5px;
+    background-color: var(--main-col-alt);
+    user-select: none;
+    cursor: pointer;
+}
+
+.key.key-black {
+    width: calc(var(--key-size) * 4/5);
+    margin: 0 calc(var(--key-size) * -0.4 - 2px);
+    z-index: 1;
+    height: calc(var(--key-size) * 2.2);
+    background-color: var(--bg-light);
+}
+
+.key.key-pressed {
+    background-color: var(--accent-alt);
+}

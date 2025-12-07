@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музыкальный секвенсор</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Play:wght@400;700&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Музыкальный секвенсор</h1>
+        <nav>
+            <a href="drums.html">Барабаны</a>
+            <a href="notes.html">Мелодии</a>
+            <a href="piano.html">Пианино</a>
+            <a href="feedback.html">Отзыв</a>
+        </nav>
+        <button class="burger-btn">
+        <svg class="open" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        <svg class="close" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>     
+        </button>
+    </header>
+    <main>
+        <div class="cards">
+            <div listen-viewport class="card">
+                <h2>01</h2>
+                <h3>Барабанный секвенсор</h3>
+                <p>
+                    Инструмент для создания простых ритмических паттернов с использованием четырёх барабанных звуков: бас-бочки, снейра, хай-хэта и ковбела. Позволяет расставлять удары на сетке и прослушивать результат в режиме реального времени.
+                </p>
+                <a href="drums.html"><img src="assets/drums.png"></a>
+                <a class="try-link" href="drums.html">
+                    <span>Попробовать</span>
+                </a>
+            </div>
+            
+            <div listen-viewport class="card">
+                <h2>02</h2>
+                <h3>Нотный секвенсор</h3>
+                <p>
+                    Средство для пошагового сочинения мелодий. Ноты размещаются на временной сетке, а выбор инструмента и тональности помогает настроить звучание композиции без необходимости игры вживую.
+                </p>
+                <a href="notes.html"><img src="assets/notes.png"></a>
+                <a class="try-link" href="notes.html">
+                    <span>Попробовать</span>
+                </a>
+            </div>
+            
+            <div listen-viewport class="card">
+                <h2>03</h2>
+                <h3>Виртуальное пианино</h3>
+                <p>
+                    Виртуальное пианино, доступное прямо в браузере. Поддерживает игру как с помощью клавиш клавиатуры, так и через сенсорный ввод, воспроизводя звуки различных синтезаторов.
+                </p>
+                <a href="piano.html"><img src="assets/piano.png"></a>
+                <a class="try-link" href="piano.html">
+                    <span>Попробовать</span>
+                </a>
+            </div>
+        </div>
+        <a class="feedback try-link" href="feedback.html">Оставить отзыв</a>
+    </main>
+    <footer>
+        <small>Студент МИРЭА 2025. Все права защищены.</small>
+    </footer>
+</body>
+</html>

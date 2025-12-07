@@ -1,0 +1,18 @@
+@media (max-width: 700px) or (max-height: 700px) {
+    :root {
+        --cell-size: 25px;
+    }
+}
+
+.pattern-editor-grid {
+    width: fit-content;
+    grid-template-columns: repeat(8, var(--cell-size));
+}
+
+.cell-black {
+    background: var(--bg-blur);
+}
+
+.cell-active[end="false"] {
+    width: calc(var(--cell-size) * 1.5);
+}
